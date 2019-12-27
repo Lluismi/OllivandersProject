@@ -5,6 +5,12 @@ from NormalItem import NormalItem
 
 class AgedBrie(NormalItem):
 
+    def AgedQuality(self, valor):
+        if self.quality + valor <= 50:
+            self.quality = self.quality + valor
+        else:
+            self.quality = 50
+
     def update_quality(self):
         self.quality += 1
 
