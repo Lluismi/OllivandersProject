@@ -21,12 +21,13 @@ def class_objects(items):
 def create_objects():
     reader = open('stdout.gr', 'r')
     for i, lines in enumerate(reader):
+        print(i, lines)
         if i in range(2, 11):
-            lines = reader.readline()
+            lines = reader.read().strip()
             print(lines)
-            lines = lines.split(',')
-            # print(lines)
-            # class_objects(lines)
+            line = lines.split('\n')
+            print(line)
+            # class_objects(line)
 
 
 if __name__ == '__main__':

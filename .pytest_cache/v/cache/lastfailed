@@ -1,3 +1,4 @@
 {
+  "test_gilded_rose.py": true,
   "test_gilded_rose.py::GildedRoseTest::test_foo": true
 }
