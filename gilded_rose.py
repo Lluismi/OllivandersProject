@@ -14,14 +14,8 @@ class GildedRose(object):
 
     def get_items(self):
 
-        reader = open(self.items, "r")
-        lines = reader.read().rstrip()
-        return lines
-
     def update_quality():
         self.items.update_quality()
 
 
 if __name__ == '__main__':
-    objetos = GildedRose("stdout.gr")
-    print(objetos.get_items())
