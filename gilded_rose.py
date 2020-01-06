@@ -12,6 +12,11 @@ class GildedRose:
     def __init__(self, items):
         self.items = items
 
+    def set_quality(self):
+        for item in self.items:
+            item.set_quality()
+        return self.items
+
     def get_items(self):
         for item in self.items:
             print(item)
@@ -40,6 +45,8 @@ if __name__ == '__main__':
     inventario = GildedRose([dexterity, aged, elixir, sulfuras, sulfuras_two,
                              first_backstage, second_backstage, third_backstage, conjured])
     assert len(inventario.items) == 9
+    inventario.set_quality()
+    print(inventario.items)
     inventario.get_items()
     assert len(inventario.items) == 9
     inventario.update_quality()

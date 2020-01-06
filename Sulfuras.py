@@ -13,7 +13,7 @@ class Sulfuras(NormalItem):
 
 
 if __name__ == "__main__":
-    Sulfuro = Sulfuras('Sulfuras, lasjd', 20, 23)
+    Sulfuro = Sulfuras('Sulfuras, lasjd', 20, 67)
     print(Sulfuro.sell_in, Sulfuro.quality)
     Sulfuro.set_sellIn()
     Sulfuro.update_quality()
