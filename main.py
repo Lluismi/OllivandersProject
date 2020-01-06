@@ -19,5 +19,7 @@ third_backstage = BackstagePass(
     'Backstage passes to a TAFKAL80ETC concert', 5, 49)
 conjured = Conjured('Conjured Mana Cake', 3, 6)
 
-GildedRose([dexterity, aged, elixir, sulfuras, sulfuras_two,
-            first_backstage, second_backstage, third_backstage, conjured])
+stock = GildedRose([dexterity, aged, elixir, sulfuras, sulfuras_two,
+                    first_backstage, second_backstage, third_backstage, conjured])
+stock.get_items()
+stock.update_quality()

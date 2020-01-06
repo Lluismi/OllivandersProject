@@ -15,11 +15,13 @@ class GildedRose:
     def get_items(self):
         for item in self.items:
             print(item)
+        return self.items
 
     def update_quality(self):
         for item in self.items:
             item.update_quality()
-            print(item.quality)
+            print(item)
+        return self.items
 
 
 if __name__ == '__main__':
@@ -37,5 +39,7 @@ if __name__ == '__main__':
     conjured = Conjured('Conjured Mana Cake', 3, 6)
     inventario = GildedRose([dexterity, aged, elixir, sulfuras, sulfuras_two,
                              first_backstage, second_backstage, third_backstage, conjured])
+    assert len(inventario.items) == 9
     inventario.get_items()
+    assert len(inventario.items) == 9
     inventario.update_quality()
