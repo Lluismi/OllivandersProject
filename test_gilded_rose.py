@@ -34,3 +34,13 @@ def test_backstage():
     backstage_two.set_sellIn()
     backstage_two.update_quality()
     assert backstage_two.quality == 0
+
+
+def test_conjured():
+    conjured = Conjured('Conjured Mana Cake', 3, 4)
+    conjured.set_sellIn()
+    conjured.update_quality()
+    conjured.set_quality()
+    assert conjured.quality == 2
+
+# Ahora toca hacer un inyector para el test de gilded_rose
