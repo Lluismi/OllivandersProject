@@ -25,6 +25,7 @@ class GildedRose:
     def update_quality(self):
         for item in self.items:
             item.update_quality()
+            item.set_quality()
             print(item)
         return self.items
 
