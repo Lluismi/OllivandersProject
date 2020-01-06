@@ -22,3 +22,15 @@ def test_sulfuras():
     sulfuras.update_quality()
     assert sulfuras.sell_in == 0
     assert sulfuras.quality == 80
+
+
+def test_backstage():
+    backstage = BackstagePass('Backstage passes', 4, 48)
+    backstage_two = BackstagePass('Backstage', 0, 46)
+    backstage.set_sellIn()
+    backstage.update_quality()
+    backstage.set_quality()
+    assert backstage.quality == 50
+    backstage_two.set_sellIn()
+    backstage_two.update_quality()
+    assert backstage_two.quality == 0
