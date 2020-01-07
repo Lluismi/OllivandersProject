@@ -1,6 +1,5 @@
-from flask import render_template
-
-app = Flask(__name__)
+from flask import Flask, render_template
+from . import app
 
 @app.route('/')
 @app.route('/index')
@@ -13,10 +12,8 @@ def add_object():
 
 @app.route('/edit_object')
 def edit_object():
-    return Hi
+    return '<h1>Hi</h1>'
 
 @app.route('/delete_object')
 def delete_object():
-    return eliminado
-
-app.run(port = 3000, debug = True)
+    return '<h1>eliminado</h1>'
