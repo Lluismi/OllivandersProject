@@ -5,6 +5,9 @@ from NormalItem import NormalItem
 
 class Sulfuras(NormalItem):
 
+    def set_quality(self):
+        self.quality = self.quality
+
     def set_sellIn(self):
         self.sell_in = 0
 
