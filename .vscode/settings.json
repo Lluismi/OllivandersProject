@@ -8,5 +8,5 @@
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.pythonPath": "venv\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\Carlos Hoyos\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"
 }
