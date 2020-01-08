@@ -6,8 +6,10 @@ from NormalItem import NormalItem
 class Conjured(NormalItem):
 
     def update_quality(self):
-        if self.quality >= 0 and self.quality <= 50:
+        if self.quality > 0:
             self.quality -= 2
+        else:
+            self.quality -= 4
 
 
 if __name__ == '__main__':

@@ -19,8 +19,10 @@ class NormalItem(Item, Updateable):
         self.sell_in -= 1
 
     def update_quality(self):
-        if self.quality >= 0 and self.quality <= 50:
+        if self.quality > 0:
             self.quality -= 1
+        else:
+            self.quality -= 2
 
 
 if __name__ == '__main__':
