@@ -18,15 +18,18 @@ class GildedRose:
         return self.items
 
     def get_items(self):
+        view = ''
         for item in self.items:
-            print(item)
-        return self.items
+            view += str(item)
+        return view
 
-    def update_quality(self):
-        for item in self.items:
-            item.update_quality()
-            item.set_quality()
-            print(item)
+    def update_quality(self, days):
+        day = 0
+        while day <= days:
+            for item in self.items:
+                item.update_quality()
+                item.set_quality()
+            day += 1
         return self.items
 
 
@@ -47,7 +50,6 @@ if __name__ == '__main__':
                              first_backstage, second_backstage, third_backstage, conjured])
     assert len(inventario.items) == 9
     inventario.set_quality()
-    print(inventario.items)
     inventario.get_items()
     assert len(inventario.items) == 9
     inventario.update_quality()
