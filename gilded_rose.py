@@ -24,14 +24,14 @@ class GildedRose:
         return view
 
     def update_quality(self, days):
-        day = 1
-        while day <= days:
+        day = 0
+        while day < days:
             for item in self.items:
                 item.set_sellIn()
                 item.update_quality()
                 item.set_quality()
             day += 1
-        return self.items
+        return str(self.items)
 
 
 if __name__ == '__main__':
@@ -53,4 +53,4 @@ if __name__ == '__main__':
     inventario.set_quality()
     inventario.get_items()
     assert len(inventario.items) == 9
-    inventario.update_quality(1)
+    inventario.update_quality(0)

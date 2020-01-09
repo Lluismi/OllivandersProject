@@ -22,4 +22,4 @@ conjured = Conjured('Conjured Mana Cake', 3, 6)
 stock = GildedRose([dexterity, aged, elixir, sulfuras, sulfuras_two,
                     first_backstage, second_backstage, third_backstage, conjured])
 stock.get_items()
-stock.update_quality(1)
+stock.update_quality(0)
