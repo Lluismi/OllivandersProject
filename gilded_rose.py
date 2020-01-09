@@ -25,7 +25,9 @@ class GildedRose:
 
     def update_quality(self, days):
         day = 0
-        while day < days:
+        while day <= days:
+            if days == 0:
+                pass
             for item in self.items:
                 item.set_sellIn()
                 item.update_quality()
