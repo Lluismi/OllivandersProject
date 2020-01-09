@@ -9,10 +9,10 @@ class Sulfuras(NormalItem):
         self.quality = self.quality
 
     def set_sellIn(self):
-        self.sell_in = 0
+        self.sell_in = self.sell_in
 
     def update_quality(self):
-        self.sell_in = self.sell_in
+        self.quality = self.quality
 
 
 if __name__ == "__main__":

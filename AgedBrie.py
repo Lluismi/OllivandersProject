@@ -12,7 +12,10 @@ class AgedBrie(NormalItem):
             self.quality = 50
 
     def update_quality(self):
-        self.quality += 1
+        if self.sell_in > 0:
+            self.quality += 1
+        if self.sell_in < 0:
+            self.quality += 2
 
 
 if __name__ == '__main__':

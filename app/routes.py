@@ -25,5 +25,5 @@ def get_items():
 
 @app.route('/update_quality')
 def update_quallty():
-    stock.update_quality(0)
+    stock.update_quality(1)
     return '<p>{}</p>'.format(stock.get_items())

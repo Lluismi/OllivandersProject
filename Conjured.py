@@ -6,9 +6,9 @@ from NormalItem import NormalItem
 class Conjured(NormalItem):
 
     def update_quality(self):
-        if self.quality > 0:
+        if self.sell_in > 0:
             self.quality -= 2
-        else:
+        if self.sell_in < 0:
             self.quality -= 4
 
 
