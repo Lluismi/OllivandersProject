@@ -5,7 +5,7 @@ from main import stock
 @app.route('/')
 @app.route('/index')
 def index():
-    return '<h1>Tienda Ollivanders</h1>' '<p>Escriba <b>/update_quality</b> para ver la calidad de los objetos.</p>'
+    return render_template('index.html')
 
 @app.route('/add_object')
 def add_object():
