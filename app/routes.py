@@ -7,10 +7,14 @@ from main import stock
 def index():
     return render_template('index.html')
 
-@app.route('/add_object')
-def add_object():
-    return '<h1>Se ha añadido correctamente el objeto al inventario.</h1>'
+@app.route('/frontend/index.html')
+def frontend():
+    return render_template('frontend/index.html')
 
+@app.route('/backend/index.html')
+def backend():
+    return render_template('backend/index.html')
+    
 @app.route('/edit_object')
 def edit_object():
     return '<h1>Se ha modificado los datos del objeto correctamente.</h1>'
