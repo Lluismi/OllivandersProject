@@ -15,13 +15,13 @@ def frontend():
 def backend():
     return render_template('backend/index.html')
     
-@app.route('/edit_object')
-def edit_object():
-    return '<h1>Se ha modificado los datos del objeto correctamente.</h1>'
+@app.route('/backend/modificar.html')
+def modificar_objeto():
+    return render_template('backend/modificar.html')
 
-@app.route('/delete_object')
-def delete_object():
-    return '<h1>Se ha eliminado el objeto correctamente.</h1>'
+@app.route('/backend/insertar.html')
+def insertar_objeto():
+    return render_template('backend/insertar.html')
 
 @app.route('/get_items')
 def get_items():
