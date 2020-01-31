@@ -1,15 +1,32 @@
 from flask import Flask, render_template
 from . import app
 from main import stock
+from PIL import Image, ImageFilter
 
 @app.route('/')
-@app.route('/index')
-def index():
-    return render_template('index.html')
-
 @app.route('/frontend/index.html')
 def frontend():
-    return render_template('frontend/index.html')
+    return render_template('frontend/index.html') 
+
+@app.route('/frontend/agedBrie.html')
+def AgedBrie():
+    return render_template('frontend/agedBrie.html') 
+
+@app.route('/frontend/backStagePass.html')
+def BackStagePass():
+    return render_template('frontend/backstagepass.html') 
+
+@app.route('/frontend/conjured.html')
+def Conjured():
+    return render_template('frontend/conjured.html') 
+
+@app.route('/frontend/normalitem.html')
+def NormalItem():
+    return render_template('frontend/normalitem.html')
+
+@app.route('/frontend/sulfuras.html')
+def Sulfuras():
+    return render_template('frontend/sulfuras.html')
 
 @app.route('/backend/index.html')
 def backend():
