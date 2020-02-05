@@ -20,7 +20,7 @@ class GildedRose:
     def get_items(self):
         view = ''
         for item in self.items:
-            view += str(item) + '\n'
+            view += str(item) + '<br>'
         return view
 
     def update_quality(self, days):
