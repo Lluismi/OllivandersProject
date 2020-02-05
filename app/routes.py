@@ -1,18 +1,17 @@
 from flask import Flask, render_template
 from . import app
 from main import stock
-from PIL import Image, ImageFilter
 
 @app.route('/')
 @app.route('/frontend/index.html')
 def frontend():
     return render_template('frontend/index.html') 
 
-@app.route('/frontend/agedBrie.html')
+@app.route('/frontend/agedbrie.html')
 def AgedBrie():
-    return render_template('frontend/agedBrie.html') 
+    return render_template('frontend/agedbrie.html') 
 
-@app.route('/frontend/backStagePass.html')
+@app.route('/frontend/backstagepass.html')
 def BackStagePass():
     return render_template('frontend/backstagepass.html') 
 
@@ -39,6 +38,10 @@ def modificar_objeto():
 @app.route('/backend/insertar.html')
 def insertar_objeto():
     return render_template('backend/insertar.html')
+
+@app.route('/backend/añadirdia.html')
+def añadir_dia():
+    return render_template('backend/añadirdia.html')
 
 @app.route('/get_items')
 def get_items():
